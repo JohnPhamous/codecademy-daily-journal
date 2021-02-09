@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { clearErrorMessage } from "./errorSlice";
 
-const Weather = () => {
+const Error = () => {
   const { errorMessage, retryHandler } = useSelector((state) => state.error);
   const dispatch = useDispatch();
 
@@ -25,4 +25,4 @@ const Weather = () => {
   );
 };
 
-export default Weather;
+export default Error;
