@@ -102,6 +102,7 @@ body {
     "Main Main Main"
     "Footer Footer Footer";
   height: 100vh;
+  overflow: hidden;
 }
 
 header {

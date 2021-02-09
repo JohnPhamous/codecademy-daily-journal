@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { removeEntry, toggleEntryDone } from "../journalSlice";
+import Confetti from "react-dom-confetti";
 
 const JournalEntry = ({ children, id, isDone }) => {
   const dispatch = useDispatch();
@@ -23,6 +24,7 @@ const JournalEntry = ({ children, id, isDone }) => {
           }}
         >
           {isDone ? "Redo" : "Done"}
+          <Confetti active={isDone} config={{ spread: 360 }} />
         </button>
       </div>
       {children}
