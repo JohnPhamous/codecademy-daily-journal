@@ -4,11 +4,11 @@ export const getImage = async () => {
   const response = await fetch(API_URL);
   const json = await response.json();
 
-  return json['results'][Math.floor(Math.random() * 5)]['urls']['full'];
+  return json["results"][Math.floor(Math.random() * 5)]["urls"]["full"];
 };
 
 const unsplashApi = {
-  getImage,
+  getImage
 };
 
 export default unsplashApi;

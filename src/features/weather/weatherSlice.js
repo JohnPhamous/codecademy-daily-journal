@@ -1,11 +1,11 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 export const weatherSlice = createSlice({
-  name: 'weather',
+  name: "weather",
   initialState: {
-    imageUrl: null,
+    imageUrl: null
   },
-  reducers: {},
+  reducers: {}
 });
 
 export const {} = weatherSlice.actions;

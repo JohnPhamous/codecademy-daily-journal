@@ -1,11 +1,11 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 export const quoteSlice = createSlice({
-  name: 'quote',
+  name: "quote",
   initialState: {
-    quote: null,
+    quote: null
   },
-  reducers: {},
+  reducers: {}
 });
 
 export const {} = quoteSlice.actions;

@@ -1,9 +1,9 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 export const journalSlice = createSlice({
-  name: 'journal',
+  name: "journal",
   initialState: {
-    entries: [],
+    entries: []
   },
   reducers: {
     addEntry: (state, action) => {
@@ -11,8 +11,8 @@ export const journalSlice = createSlice({
     },
     remoteEntry: (state, action) => {
       state.entries = state.entries.filter((entry) => entry.id !== action.id);
-    },
-  },
+    }
+  }
 });
 
 export const { addEntry, remoteEntry } = journalSlice.actions;
