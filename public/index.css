@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap");
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
 #background-image-container {
   position: absolute;
   width: 100vw;
@@ -105,9 +111,104 @@ header {
 
 main {
   grid-area: Main;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  padding-top: 64px;
+  align-items: center;
 }
 
 footer {
   grid-area: Footer;
   padding: 12px 24px;
+}
+
+.surface {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: fit-content;
+  padding: 24px 24px;
+  width: 85%;
+}
+
+.journal-input {
+  width: 100%;
+  padding-top: 4px;
+  display: block;
+  background: 0;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 2.25em;
+  line-height: 1.2;
+  font-weight: 500;
+  outline: none;
+  text-align: center;
+}
+
+.surface h2 {
+  margin: 0;
+}
+
+h2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -1.8px;
+  line-height: 46px;
+  text-shadow: 0 2px 4px rgba(71, 97, 206, 0.36);
+  position: relative;
+  top: 4px;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.9px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(71, 97, 206, 0.357272);
+}
+
+.entries-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+.entry {
+  background: rgba(69, 123, 157, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: fit-content;
+  padding: 24px 24px;
+}
+
+.surface-blue {
+  background: rgba(69, 123, 157, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.surface-red {
+  background: rgba(230, 57, 70, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.surface-green {
+  background: rgba(88, 129, 87, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.surface-orange {
+  background: rgba(247, 127, 0, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
