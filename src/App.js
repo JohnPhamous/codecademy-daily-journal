@@ -4,6 +4,8 @@ import Weather from "./features/weather/Weather";
 import Quote from "./features/quote/Quote";
 import Error from "./features/error/Error";
 import Journal from "./features/journal/Journal";
+import BackgroundImageLeftControl from "./features/backgroundImage/components/BackgroundImageLeftControl";
+import BackgroundImageRightControl from "./features/backgroundImage/components/BackgroundImageRightControl";
 
 function App() {
   return (
@@ -14,13 +16,13 @@ function App() {
         <Weather />
       </header>
       <aside className="left-wallpaper-control wallpaper-control">
-        <button aria-label="Switch to previous wallpaper">{"<"}</button>
+        <BackgroundImageLeftControl />
       </aside>
       <main>
         <Journal />
       </main>
       <aside className="right-wallpaper-control wallpaper-control">
-        <button aria-label="Switch to next wallpaper">{">"}</button>
+        <BackgroundImageRightControl />
       </aside>
       <footer>
         <Quote />

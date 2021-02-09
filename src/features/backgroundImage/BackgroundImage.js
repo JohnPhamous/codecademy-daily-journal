@@ -3,7 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { getBackgroundImage } from "./backgroundImageSlice";
 
 const BackgroundImage = () => {
-  const imageUrl = useSelector((state) => state.backgroundImage.imageUrl);
+  const { imageUrls, currentImageUrlIndex } = useSelector(
+    (state) => state.backgroundImage
+  );
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -12,7 +14,7 @@ const BackgroundImage = () => {
 
   return (
     <div id="background-image-container">
-      <img src={imageUrl} alt="" id="background-image" />
+      <img src={imageUrls[currentImageUrlIndex]} alt="" id="background-image" />
     </div>
   );
 };
