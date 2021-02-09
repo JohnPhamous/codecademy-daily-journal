@@ -3,6 +3,7 @@
   width: 100vw;
   height: 100vh;
   top: 0;
+  left: 0;
   z-index: -1;
   overflow: hidden;
 }
@@ -48,6 +49,10 @@ body {
   margin-left: -6px;
 }
 
+#quote {
+  text-align: center;
+}
+
 .quote-author {
   opacity: 0.75;
   margin: 0;
@@ -64,6 +69,7 @@ body {
   justify-content: center;
   padding: 8px 16px;
   align-items: center;
+  margin-top: -12px;
 }
 
 #error-message-container button {
@@ -78,4 +84,30 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 64px;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Header Header Header"
+    "Main Main Main"
+    "Footer Footer Footer";
+  height: 100vh;
+}
+
+header {
+  grid-area: Header;
+  padding: 12px 24px;
+}
+
+main {
+  grid-area: Main;
+}
+
+footer {
+  grid-area: Footer;
+  padding: 12px 24px;
 }
