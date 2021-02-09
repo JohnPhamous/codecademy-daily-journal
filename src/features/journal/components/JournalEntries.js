@@ -1,4 +1,5 @@
 import React from "react";
+import JournalEntry from "./JournalEntry";
 
 const JournalEntries = ({ entries }) => {
   const COLORS = [
@@ -13,9 +14,16 @@ const JournalEntries = ({ entries }) => {
   return (
     <div className="surface">
       <ul className="entries-list">
-        {entries.map((entry, index) => (
-          <li key={entry} className={`entry ${getEntryColor(index)}`}>
-            {entry}
+        {entries.map(({ text, isDone }, index) => (
+          <li
+            key={text}
+            className={`${getEntryColor(index)} surface-styles ${
+              isDone ? "entry-done" : ""
+            }`}
+          >
+            <JournalEntry id={index} isDone={isDone}>
+              {text}
+            </JournalEntry>
           </li>
         ))}
       </ul>
