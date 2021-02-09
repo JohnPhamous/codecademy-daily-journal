@@ -1,4 +1,7 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import unsplashApi from '../../api/unsplash';
+
+export const getBackgroundImage = createAsyncThunk('backgroundImage/getImage', unsplashApi.getImage);
 
 export const backgroundImageSlice = createSlice({
   name: 'backgroundImage',
@@ -6,6 +9,11 @@ export const backgroundImageSlice = createSlice({
     imageUrl: null,
   },
   reducers: {},
+  extraReducers: {
+    [getBackgroundImage.fulfilled]: (state, action) => {
+      state.imageUrl = action.payload;
+    },
+  },
 });
 
 export const {} = backgroundImageSlice.actions;
