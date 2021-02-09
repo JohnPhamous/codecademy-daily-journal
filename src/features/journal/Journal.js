@@ -11,6 +11,10 @@ const Journal = () => {
   const onFormSubmit = (e) => {
     e.preventDefault();
 
+    if (newJournalEntry === "") {
+      return;
+    }
+
     dispatch(addJournalEntry(newJournalEntry));
     setNewJournalEntry("");
   };

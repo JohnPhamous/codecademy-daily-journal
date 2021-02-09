@@ -8,13 +8,13 @@ const JournalEntries = ({ entries }) => {
     "surface-orange"
   ];
 
-  const getEntryColor = () => COLORS[Math.floor(Math.random() * COLORS.length)];
+  const getEntryColor = (index) => COLORS[index % COLORS.length];
 
   return (
     <div className="surface">
       <ul className="entries-list">
-        {entries.map((entry) => (
-          <li key={entry} className={`entry ${getEntryColor()}`}>
+        {entries.map((entry, index) => (
+          <li key={entry} className={`entry ${getEntryColor(index)}`}>
             {entry}
           </li>
         ))}
