@@ -32,6 +32,7 @@ const Journal = () => {
             onChange={(e) => {
               setNewJournalEntry(e.target.value);
             }}
+            aria-label="New journal entry"
           />
         </form>
       </div>

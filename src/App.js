@@ -13,9 +13,15 @@ function App() {
         <Error />
         <Weather />
       </header>
+      <aside className="left-wallpaper-control wallpaper-control">
+        <button aria-label="Switch to previous wallpaper">{"<"}</button>
+      </aside>
       <main>
         <Journal />
       </main>
+      <aside className="right-wallpaper-control wallpaper-control">
+        <button aria-label="Switch to next wallpaper">{">"}</button>
+      </aside>
       <footer>
         <Quote />
       </footer>
