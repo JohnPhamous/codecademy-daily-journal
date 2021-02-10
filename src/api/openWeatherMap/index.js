@@ -5,8 +5,8 @@ export const getWeather = async (city, state) => {
   const json = await response.json();
 
   return {
-    weatherMetadata: json["weather"][0],
-    temperature: json["main"]["temp"]
+    weatherMetadata: json.weather[0],
+    temperature: json.main.temp
   };
 };
 
