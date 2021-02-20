@@ -76,7 +76,7 @@ We will use the [Current Weather API](https://openweathermap.org/current) as an 
 const API_KEY = "A_RANDOM_API_KEY";
 const API_URL = `https://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}`;
 
-export const getWeather = async () => {
+const getWeather = async () => {
   const response = await fetch(API_URL);
   const json = await response.json();
 
@@ -86,11 +86,125 @@ export const getWeather = async () => {
 
 #### Quote
 
+You can use the [Quotes API](https://quotes.rest). Here's how to get started:
+
+1. Read their [API documentation](https://quotes.rest) to see which API gives you the data you need
+
+##### Example
+
+We will use the [Quote of the day API](https://quotes.rest/#operations-tag-Quote_of_the_day) as an example. Inside of our code, we can get the quote of the day like this:
+
+```js
+const API_URL = `https://quotes.rest/qod?language=en`;
+
+const getQuote = async () => {
+  const response = await fetch(API_URL);
+  const json = await response.json();
+
+  return json;
+};
+```
+
 #### Image
+
+You can use the [Unsplash API](https://unsplash.com/developers). Here's how to get started:
+
+1. [Create an account](https://unsplash.com/join)
+2. [Create a new application](https://unsplash.com/oauth/applications/new) on their developer portal. You will need to copy the Access Key.
+3. Read their [API documentation](https://unsplash.com/documentation) to see which API gives you the data you need
+
+##### Example
+
+We will use the [Search photos API](https://unsplash.com/documentation#search-photos) as an example. Inside of our code, we can get photos based on a query like this:
+
+```js
+// This is the key you copied from step 2.
+const ACCESS_KEY = 'A_RANDOM_ACCESS_KEY'
+const API_URL = `https://api.unsplash.com/search/photos?client_id=${ACCESS_KEY}`;
+
+/**
+ * @param {string} query - The query used to find relevant images.
+ */
+const getImages = async (query) => {
+  const response = await fetch(`${API_URL}&query=${query}`);
+  const json = await response.json();
+
+  return json;
+};
+```
 
 ## Tasks
 
+### Plan your Project
+
+Visualize your end result. What can it do? Make sure that it satisfies all of the project objectives.
+
+Make a timeline for yourself and avoid the temptation to build things that aren't required. Setting firm boundaries and deadlines will keep you on track and prevent [scope creep](https://en.wikipedia.org/wiki/Scope_creep).
+
+The following tasks will help you identify natural break points.
+
+### Breakdown your Application
+
+Using pencil and paper or a tool of your choice, breakdown what your application will look like as components. You can reference the [React documentation](https://reactjs.org/docs/thinking-in-react.html#step-1-break-the-ui-into-a-component-hierarchy) as a refresher on how to do this.
+
+#### Hint
+
+Think about what the main components of the application will be and how they will interact with each other. Think about how the state will look, which components will read the state, and which components will dispatch actions.
+
+### Create Files and Run it Locally
+
+On your computer, create the files needed for your React and Redux Toolkit application. Run your application locally to see what it looks like in the browser.
+
+#### Hint
+
+You can use [create-react-app](https://create-react-app.dev/) to start your React application. If you want to set up Redux automatically, you can use [the Redux flag](https://redux-toolkit.js.org/introduction/quick-start#using-create-react-app).
+
+### Version control
+
+Set up the folder you created previously to be a Git repository. Push the initial files to a repository on GitHub. You should be consistently committing your changes throughout the project. Make sure to have meaningful commit messages.
+
+#### HINT
+
+To initialize your Git repository, you can run the below code in your terminal, where `application` is the name of your project folder.
+
+```git init application```
+
+If you want a refresher on the syntax, look back at the [Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf).
+
+### Build the Components
+
+Start building your application with mock data. You should focus on how your components will interact with the data rather than how it will get the data from APIs at this point. Once you've polished the interactions, then you can move forward with connecting your components with APIs. Remember to build reusable components and to keep your components small.
+
+Things to keep in mind:
+
+- You are welcome to use any libraries to help you build features
+- You are welcome to use other APIs that are not listed above
+
+### Connect your Components to Redux
+
+Now that you've built your components, you will want to connect them to the Redux store. Remember to build slices that make sense. Related data should belong in the same slice and actions should describe events happening in your application. At this point your application is not connected with the APIs so feel free to set the initial states for the slices to mock data.
+
+### Connect your Application with the APIs
+
+Connect your application with the APIs needed for your features. When interacting with APIs, don't forget to handle the loading and error states.
+
+### Publish to the Web
+
+Congratulations on building your application! Deploy what you've built and share it with the world!
+
+### Next Steps
+
+You've built something amazing! Share it with people, get feedback, and improve it.
+
 ## Resources
+
+### Debugging Tips
+
+Feeling stuck? Try the following:
+
+- **Google your question:** oftentimes, someone has had the same question as you! Check out websites like StackOverflow and Quora to see how other folks have found solutions.
+- **Read the documentation:** make sure to carefully read through the documentation for any languages and libraries that you are using. Oftentimes they'll have examples of what you're looking for!
+- **Rubber ducking:** try to explain a problem to a friend or co-worker. Oftentimes you'll figure out the solution as you're trying to explain it. And if not, getting another pair of eyes on your code can be helpful.
 
 ## Example Code
 
