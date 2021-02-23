@@ -34,9 +34,9 @@ For this project, you will build an inspirational homepage. This application wil
 - Users can check what the weather is
 - Users are shown an inspirational image
 - Users are shown an inspirational quote
-- Users can write down their thoughts
-- Users can delete thoughts
-- Users can mark thoughts as complete
+- Users can write down their goals
+- Users can delete goals
+- Users can mark goals as complete
 
 ## Prerequisites
 
