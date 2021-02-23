@@ -31,7 +31,7 @@ For this project, you will build an inspirational homepage. This application wil
 
 ### Features
 
-- Users can check what the weather is
+- Users can check the current weather
 - Users are shown an inspirational image
 - Users are shown an inspirational quote
 - Users can write down their goals
