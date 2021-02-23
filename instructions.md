@@ -4,7 +4,7 @@ In this project, you will bring together what you have learned in the previous l
 
 ## Project Title
 
-Journal
+Inspirational Homepage
 
 ## Hours to Complete
 
