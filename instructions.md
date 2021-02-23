@@ -183,6 +183,7 @@ Things to keep in mind:
 
 - You are welcome to use any libraries to help you build features
 - You are welcome to use other APIs that are not listed above
+- You should be consistent on the folder structure. Remember to think about features, connected components, and presentational components.
 
 ### Connect your Components to Redux
 
@@ -198,6 +199,10 @@ Connect your application with the APIs needed for your features. When interactin
 ### Publish to the Web
 
 Congratulations on building your application! Deploy what you've built and share it with the world!
+
+#### Hint
+
+We recommend using [Netlify](https://www.netlify.com/). You can learn how to deploy your application from your repository [here](TODO:REPLACE_WITH_BENS_ARTICLE)
 
 ### Next Steps
 
