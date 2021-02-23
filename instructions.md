@@ -44,7 +44,7 @@ For this project, you will build an inspirational homepage. This application wil
 - CSS
 - JavaScript, including requests to APIs
 - React
-- Redux Toolkit
+- Redux
 - Git and GitHub
 
 ## Setup
