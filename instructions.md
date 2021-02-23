@@ -47,6 +47,7 @@ For this project, you will build an inspirational homepage. This application wil
 - React
 - Redux
 - Git and GitHub
+- Deployment with Netlify
 
 ## Setup
 
