@@ -175,7 +175,7 @@ If you want a refresher on the syntax, look back at the [Git cheat sheet](https:
 
 ### Build the Components
 
-Start building your application with mock data. You should focus on how your components will interact with the data rather than how it will get the data from APIs at this point. Once you've polished the interactions, then you can move forward with connecting your components with APIs. Remember to build reusable components and to keep your components small.
+Start building your application with mock data. You should focus on how your components will interact with the data rather than how it will get the data from APIs at this point (that comes in a later task). Remember to build reusable components and to keep your components small.
 
 Things to keep in mind:
 
