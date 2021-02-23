@@ -27,7 +27,7 @@ For this project, you will build an inspirational homepage. This application wil
   - Technologies used
   - Features
   - Future work
-- Your application is deployed and accessible by users
+- Your application is deployed via Netlify and accessible by users
 
 ### Features
 
