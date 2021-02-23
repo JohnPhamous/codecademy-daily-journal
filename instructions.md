@@ -20,7 +20,7 @@ For this project, you will build an inspirational homepage. This application wil
 
 ## Project Requirements
 
-- Build the application using React and Redux Toolkit
+- Build the application using React and Redux
 - Version control your application with Git and host the repository on GitHub
 - Write a README (using Markdown) that documents your project including:
   - The purpose of your project
