@@ -16,7 +16,7 @@ Working with multiple APIs to build multiple features is a common problem to sol
 
 ## Long Overview
 
-For this project, you will build an inspirational homepage. This application will interact with different APIs to display the current weather, a background image, and an inspirational quote. It will also provide users with a space to write down their goals for the day. You can think of this app as a fancy todo list with dynamic data. 
+For this project, you will build an inspirational homepage. This application will interact with different APIs to display the current weather, a background image, and an inspirational quote. It will also provide users with a space to write down their goals for the day. You can think of this app as a fancy todo list with dynamic data.
 
 ## Project Requirements
 
@@ -162,6 +162,8 @@ On your computer, create the files needed for your React and Redux Toolkit appli
 You can use [create-react-app](https://create-react-app.dev/) to start your React application. If you want to set up Redux automatically, you can use [the Redux flag](https://redux-toolkit.js.org/introduction/quick-start#using-create-react-app).
 
 ### Version control
+
+If you used `create-react-app` above, you can skip this step. `create-react-app` automatically configures the local Git repository. You will still need to set up a remote origin though, you can learn more [here](TODO:REPLACE_WITH_BENS_ARTICLE).
 
 Set up the folder you created previously to be a Git repository. Push the initial files to a repository on GitHub. You should be consistently committing your changes throughout the project. Make sure to have meaningful commit messages.
 
