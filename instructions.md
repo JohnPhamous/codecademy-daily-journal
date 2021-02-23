@@ -182,7 +182,7 @@ Things to keep in mind:
 
 ### Connect your Components to Redux
 
-Now that you've built your components, you will want to connect them to the Redux store. Remember to build slices that make sense. Related data should belong in the same slice and actions should describe events happening in your application. At this point your application is not connected with the APIs so feel free to set the initial states for the slices to mock data.
+Now that you've built your components, you will want to connect them to the Redux store. Related data should belong in the same slice and actions should describe events happening in your application. At this point your application is not connected with the APIs so feel free to set the initial states for the slices to mock data.
 
 ### Connect your Application with the APIs
 
