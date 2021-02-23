@@ -184,6 +184,9 @@ Things to keep in mind:
 
 Now that you've built your components, you will want to connect them to the Redux store. Related data should belong in the same slice and actions should describe events happening in your application. At this point your application is not connected with the APIs so feel free to set the initial states for the slices to mock data.
 
+HINT
+You'll need at least four slices: one for each API and one for the goals list.
+
 ### Connect your Application with the APIs
 
 Connect your application with the APIs needed for your features. When interacting with APIs, don't forget to handle the loading and error states.
