@@ -42,7 +42,7 @@ For this project, you will build an inspirational homepage. This application wil
 
 - HTML
 - CSS
-- JavaScript
+- JavaScript, including requests to APIs
 - React
 - Redux Toolkit
 - Git and GitHub
