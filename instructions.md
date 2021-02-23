@@ -55,7 +55,7 @@ For this project, you will build an inspirational homepage. This application wil
 
 You will be doing this project outside of the Codecademy platform, on your own computer.
 
-For this particular project, you will be using your own text editor (we suggest [VS Code](https://code.visualstudio.com/download)) and Git version control. If you need help setting up your text editor, read our [article about setting up a text editor for web development](https://www.codecademy.com/articles/visual-studio-code). If you need a refresher on how to work with Git for version control, [review the Git lesson](https://www.codecademy.com/learn/learn-git) or look at this [cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf).
+For this particular project, you will be using your own text editor (we suggest [VS Code](https://code.visualstudio.com/download)) and Git version control. If you need help setting up your text editor, read our [article about setting up a text editor for web development](https://www.codecademy.com/articles/visual-studio-code). If you need a refresher on how to work with Git for version control, [review the Git lesson](https://www.codecademy.com/learn/learn-git) or look at this [cheat sheet](https://www.codecademy.com/learn/learn-git/modules/learn-git-git-workflow-u/cheatsheet).
 
 ### APIs
 
