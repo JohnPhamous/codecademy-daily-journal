@@ -16,7 +16,7 @@ Working with multiple APIs to build multiple features is a common problem to sol
 
 ## Long Overview
 
-For this project, you will build journaling application. This application will interact with different APIs to provide users with a space to write down their thoughts. You can think of this app as a fancy todo list with features such as: showing inspirational images, quotes, and their weather.
+For this project, you will build an inspirational homepage. This application will interact with different APIs to display the current weather, a background image, and an inspirational quote. It will also provide users with a space to write down their goals for the day. You can think of this app as a fancy todo list with dynamic data. 
 
 ## Project Requirements
 
