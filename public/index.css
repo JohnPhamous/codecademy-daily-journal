@@ -96,7 +96,7 @@ body {
 .App {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 1fr 64px;
+  grid-template-rows: 100px 1fr auto;
   gap: 0px 0px;
   grid-template-areas:
     "Header Header Header"
@@ -117,12 +117,14 @@ main {
   flex-direction: column;
   row-gap: 24px;
   padding-top: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
   align-items: center;
 }
 
 footer {
   grid-area: Footer;
-  padding: 12px 24px;
+  padding: 24px;
 }
 
 .surface {
@@ -190,6 +192,7 @@ p {
   width: fit-content;
   padding: 24px 24px;
   position: relative;
+  font-size: 18px;
 }
 
 .surface-styles {
@@ -273,7 +276,7 @@ p {
   background: none;
   outline: none;
   color: white;
-  font-size: 36px;
+  font-size: 64px;
   cursor: pointer;
   font-weight: 200;
   opacity: 0.5;
@@ -289,6 +292,7 @@ p {
   grid-column-start: 1;
   display: flex;
   align-items: center;
+  margin-left: 16px;
 }
 
 .right-wallpaper-control {
@@ -297,4 +301,5 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-right: 16px;
 }
