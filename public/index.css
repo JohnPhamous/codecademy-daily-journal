@@ -273,7 +273,7 @@ p {
   background: none;
   outline: none;
   color: white;
-  font-size: 36px;
+  font-size: 64px;
   cursor: pointer;
   font-weight: 200;
   opacity: 0.5;
@@ -289,6 +289,7 @@ p {
   grid-column-start: 1;
   display: flex;
   align-items: center;
+  margin-left: 16px;
 }
 
 .right-wallpaper-control {
@@ -297,4 +298,5 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-right: 16px;
 }
