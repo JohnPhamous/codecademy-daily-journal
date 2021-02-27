@@ -34,6 +34,7 @@ body {
 
 .temperature-container {
   display: flex;
+  padding-right: 40px;
 }
 
 .weather {
@@ -115,7 +116,6 @@ main {
   grid-area: Main;
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
   padding-top: 64px;
   padding-left: 32px;
   padding-right: 32px;
@@ -136,6 +136,10 @@ footer {
   height: fit-content;
   padding: 24px 24px;
   width: 85%;
+}
+
+#journal {
+  margin-bottom: 24px;
 }
 
 .journal-input {
@@ -181,8 +185,11 @@ p {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 16px;
-  row-gap: 16px;
+}
+
+.entries-list > * {
+  margin-right: 16px;
+  margin-bottom: 16px;
 }
 
 .entry {
@@ -226,9 +233,12 @@ p {
   top: -12px;
   right: -12px;
   display: flex;
-  column-gap: 6px;
   opacity: 0;
   transition: opacity 0.1s ease-in;
+}
+
+.entry-actions-container > * {
+  margin-right: 6px;
 }
 
 .entry:hover .entry-actions-container {
