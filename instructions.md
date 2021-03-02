@@ -61,79 +61,9 @@ For this particular project, you will be using your own text editor (we suggest 
 
 For this project, you are welcome to use any APIs you want. You are encouraged to find new APIs to build new features for your application. Below we provide some recommendations.
 
-#### Weather
-
-You can use the [OpenWeather API](https://openweathermap.org). Here's how to get started:
-
-1. [Create an account](https://home.openweathermap.org/users/sign_up)
-2. Go to the [API keys page](https://home.openweathermap.org/api_keys) and copy the `Key` value
-3. Read their [API documentation](https://openweathermap.org/api) to see which API gives you the data you need
-
-##### Example
-
-We will use the [Current Weather API](https://openweathermap.org/current) as an example. Inside of our code, we can get the current weather data like this:
-
-```js
-// This is the key you copied from step 2.
-const API_KEY = "A_RANDOM_API_KEY";
-const API_URL = `https://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}`;
-
-const getWeather = async () => {
-  const response = await fetch(API_URL);
-  const json = await response.json();
-
-  return json;
-};
-```
-
-#### Quote
-
-You can use the [Quotes API](https://quotes.rest). Here's how to get started:
-
-1. Read their [API documentation](https://quotes.rest) to see which API gives you the data you need
-
-##### Example
-
-We will use the [Quote of the day API](https://quotes.rest/#operations-tag-Quote_of_the_day) as an example. Inside of our code, we can get the quote of the day like this:
-
-```js
-const API_URL = `https://quotes.rest/qod?language=en`;
-
-const getQuote = async () => {
-  const response = await fetch(API_URL);
-  const json = await response.json();
-
-  return json;
-};
-```
-
-#### Image
-
-You can use the [Unsplash API](https://unsplash.com/developers). Here's how to get started:
-
-1. [Create an account](https://unsplash.com/join)
-2. [Create a new application](https://unsplash.com/oauth/applications/new) on their developer portal. You will need to copy the Access Key.
-3. Read their [API documentation](https://unsplash.com/documentation) to see which API gives you the data you need
-
-##### Example
-
-We will use the [Search photos API](https://unsplash.com/documentation#search-photos) as an example. Inside of our code, we can get photos based on a query like this:
-
-```js
-// This is the key you copied from step 2.
-const ACCESS_KEY = 'A_RANDOM_ACCESS_KEY'
-const API_URL = `https://api.unsplash.com/search/photos?client_id=${ACCESS_KEY}`;
-
-/**
- * @param {string} query - The query used to find relevant images.
- */
-const getImages = async (query) => {
-  const response = await fetch(`${API_URL}&query=${query}`);
-  const json = await response.json();
-
-  return json;
-};
-```
+- Weather: [OpenWeather API](https://openweathermap.org)
+- Quote: [Quotes API](https://quotes)
+- Image: [Unsplash API](https://unsplash.com/developers)
 
 ## Tasks
 
@@ -195,6 +125,81 @@ You'll need at least four slices: one for each API and one for the goals list.
 ### Connect your Application with the APIs
 
 Connect your application with the APIs needed for your features. When interacting with APIs, don't forget to handle the loading and error states.
+
+
+### Weather API
+
+You can use the [OpenWeather API](https://openweathermap.org). Here's how to get started:
+
+1. [Create an account](https://home.openweathermap.org/users/sign_up)
+2. Go to the [API keys page](https://home.openweathermap.org/api_keys) and copy the `Key` value
+3. Read their [API documentation](https://openweathermap.org/api) to see which API gives you the data you need
+
+##### Hint
+
+We will use the [Current Weather API](https://openweathermap.org/current) as an example. Inside of our code, we can get the current weather data like this:
+
+```js
+// This is the key you copied from step 2.
+const API_KEY = "A_RANDOM_API_KEY";
+const API_URL = `https://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}`;
+
+const getWeather = async () => {
+  const response = await fetch(API_URL);
+  const json = await response.json();
+
+  return json;
+};
+```
+
+### Quote
+
+You can use the [Quotes API](https://quotes.rest). Here's how to get started:
+
+1. Read their [API documentation](https://quotes.rest) to see which API gives you the data you need
+
+##### Hint
+
+We will use the [Quote of the day API](https://quotes.rest/#operations-tag-Quote_of_the_day) as an example. Inside of our code, we can get the quote of the day like this:
+
+```js
+const API_URL = `https://quotes.rest/qod?language=en`;
+
+const getQuote = async () => {
+  const response = await fetch(API_URL);
+  const json = await response.json();
+
+  return json;
+};
+```
+
+### Image
+
+You can use the [Unsplash API](https://unsplash.com/developers). Here's how to get started:
+
+1. [Create an account](https://unsplash.com/join)
+2. [Create a new application](https://unsplash.com/oauth/applications/new) on their developer portal. You will need to copy the Access Key.
+3. Read their [API documentation](https://unsplash.com/documentation) to see which API gives you the data you need
+
+##### Hint
+
+We will use the [Search photos API](https://unsplash.com/documentation#search-photos) as an example. Inside of our code, we can get photos based on a query like this:
+
+```js
+// This is the key you copied from step 2.
+const ACCESS_KEY = 'A_RANDOM_ACCESS_KEY'
+const API_URL = `https://api.unsplash.com/search/photos?client_id=${ACCESS_KEY}`;
+
+/**
+ * @param {string} query - The query used to find relevant images.
+ */
+const getImages = async (query) => {
+  const response = await fetch(`${API_URL}&query=${query}`);
+  const json = await response.json();
+
+  return json;
+};
+```
 
 ### Publish to the Web
 
