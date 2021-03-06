@@ -122,10 +122,6 @@ Now that you've built your components, you will want to connect them to the Redu
 HINT
 You'll need at least four slices: one for each API and one for the goals list.
 
-### Connect your Application with the APIs
-
-Connect your application with the APIs needed for your features. When interacting with APIs, don't forget to handle the loading and error states.
-
 
 ### Weather API
 
@@ -151,6 +147,8 @@ const getWeather = async () => {
   return json;
 };
 ```
+
+Don't forget to handle the loading and error states when interacting with APIs.
 
 ### Quote
 
