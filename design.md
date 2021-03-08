@@ -22,3 +22,7 @@ Now, lets imagine the law of the universe changes and the formula to calculate t
 In this sample project, we abstract the details of getting the data from the APIs. This allows us to change the APIs we use easily. Let's say the current API we're using is no longer available or a new feature request can't be fulfilled. We can switch to a new API by changing a single place in our codebase.
 
 # Error Handling
+
+In this project, we have a slice that handles showing error messages to the user. This makes it easier to reason about our codebase and make error-related changes because there is a single place that handles anything related to errors. This also acts a form of abstraction.
+
+Each slice can create errors in different ways. Instead of implementing the logic to display the error messages in each slice, we have a single slice that handles that. The other slices dispatch an action that the error slice listens and acts upon.
